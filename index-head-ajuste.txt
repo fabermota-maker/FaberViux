@@ -1,0 +1,19 @@
+<!-- Cole este bloco dentro do <head> do index.html se ainda não existir -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#050506">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="FaberViux">
+<link rel="manifest" href="./manifest.webmanifest?v=fullscreen20260625">
+<link rel="apple-touch-icon" href="./icon-180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icon-32.png">
+
+<!-- Cole este bloco antes de fechar o </body> caso o index ainda não registre o service worker -->
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("./service-worker.js?v=fullscreen20260625");
+    });
+  }
+</script>

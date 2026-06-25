@@ -1,0 +1,26 @@
+FaberViux — atualização PWA tela cheia
+
+Arquivos incluídos:
+- manifest.webmanifest atualizado com display fullscreen
+- service-worker.js atualizado com cache novo e correção PWA
+- icon-512.png criado para instalação correta do app
+- pasta icons/ criada para compatibilidade com os caminhos antigos
+- favicon.ico recriado
+- index-head-ajuste.txt com o bloco para colar no index.html se necessário
+
+Como subir no GitHub:
+1. Abra o repositório FaberViux.
+2. Clique em Add file > Upload files.
+3. Arraste TODOS os arquivos e a pasta icons deste ZIP para a raiz do repositório.
+4. Quando o GitHub perguntar se deseja substituir manifest.webmanifest e service-worker.js, confirme.
+5. Faça Commit changes.
+
+Observação importante:
+Este pacote não substitui o seu index.html para evitar apagar o app atual.
+O ajuste principal de tela cheia fica no manifest.webmanifest e no service-worker.js.
+Se no celular ainda aparecer a barra do navegador, abra o arquivo index-head-ajuste.txt e cole os blocos indicados no seu index.html.
+
+Depois de subir:
+- Android: abra no Chrome, menu de 3 pontos, Instalar app ou Adicionar à tela inicial.
+- iPhone: abra no Safari, Compartilhar, Adicionar à Tela de Início.
+- Abra sempre pelo ícone instalado, não pelo navegador normal.

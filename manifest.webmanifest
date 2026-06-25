@@ -1,14 +1,38 @@
 {
   "name": "FaberViux",
   "short_name": "FaberViux",
-  "start_url": "./index.html?v=20260625fixpng",
+  "description": "Catálogo pessoal de filmes, séries e animes já vistos.",
+  "id": "./index.html",
+  "start_url": "./index.html?v=fullscreen20260625",
   "scope": "./",
-  "display": "standalone",
+  "display": "fullscreen",
+  "display_override": [
+    "fullscreen",
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "portrait",
   "background_color": "#050506",
   "theme_color": "#050506",
-  "description": "Catálogo pessoal de filmes, séries e animes já vistos.",
+  "prefer_related_applications": false,
   "icons": [
-    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
-    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+    {
+      "src": "./icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
